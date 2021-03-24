@@ -35,6 +35,13 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.title {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Lato', sans-serif;
+    text-decoration: underline dashed;
+}
+
 .btn {
     background-color: #bee3db;
     font-size: 25px;
@@ -51,16 +58,16 @@ body {
         width: 40vh;
     }
     .timer {
-        font-size: 60px;
+        font-size: 40px;
+    }
+    .title {
+        font-size: 30px;
     }
 }
 
-@media only screen and (orientation: landscape) and (max-width: 769px) {
+@media only screen and (orientation: landscape) and (max-width: 824px) {
     .circle {
         height: 70vh;
         width: 70vh;
-    }
-    .timer {
-        font-size: 50px;
     }
 }
