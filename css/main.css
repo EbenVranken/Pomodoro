@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #bee3db;
+}
+
+.circle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 50vh;
+    width: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #89b0ae;
+    color: white;
+    border-radius: 50%;
+    -moz-box-shadow: 0 0 25px #89b0ae;
+    -webkit-box-shadow: 0 0 25px #89b0ae;
+    box-shadow: 0 0 25px #89b0ae;
+}
+
+.timer {
+    text-align: center;
+    font-size: 75px;
+    font-family: 'Lato', sans-serif;
+}
+
+.btn {
+    background-color: #bee3db;
+    font-size: 25px;
+    color: #89b0ae;
+}
+
+.btn:hover {
+    background-color: #d0ece6;
+}
+
+@media only screen and (max-width: 769px) {
+    .circle {
+        height: 40vh;
+        width: 40vh;
+    }
+    .timer {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 769px) {
+    .circle {
+        height: 70vh;
+        width: 70vh;
+    }
+    .timer {
+        font-size: 50px;
+    }
+}
