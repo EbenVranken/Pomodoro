@@ -26,6 +26,7 @@ function startTimer(workTime, pauseTime, display) {
 
             if (--timer < 0) {
                 if (!onBreak) {
+                    document.querySelector(".title").innerHTML = "Break";
                     timer = pauseTime
                     breakCount++;
                     onBreak = true;
@@ -34,6 +35,7 @@ function startTimer(workTime, pauseTime, display) {
                         breakCount = 0;
                     }
                 } else {
+                    document.querySelector(".title").innerHTML = "Work";
                     timer = workTime;
                     onBreak = false;
                 }
